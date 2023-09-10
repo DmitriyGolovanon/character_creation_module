@@ -1,22 +1,4 @@
-from math import sqrt
+def avg(first_num, second_num):
+    return first_num + second_num / 2
 
-message = 'Добро пожаловать в самую лучшую программу для вычисления ' \
-          'квадратного корня из заданного числа'
-print(message)
-
-
-def calculate_square_root(number):
-    """Вычисляет квадратный корень"""
-    return sqrt(number)
-
-
-def calc(your_number):
-    """Главная функция рассчета"""
-    if your_number <= 0:
-        return
-    root = calculate_square_root(your_number)
-    print(f'Мы вычислили квадратный корень из '
-          f'введённого вами числа. Это будет: {root}')
-
-
-calc(25.5)
+print(avg(5, 10)) 
